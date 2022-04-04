@@ -2,7 +2,6 @@
 import React from 'react';
 
 //Components
-import Logo1 from './Logo1';
 
 //Styles
 import '../styles/Header.css'
@@ -11,7 +10,9 @@ import '../styles/Header.css'
 const Header = () => {
   return (
     <header>
-      <Logo1/>
+      <div className='logo-container'>
+        <img src='../../assets/logo/logo1_small.png' alt='logo'/>
+      </div>
       <nav>
         <ul>
           <li>Inicio</li>
