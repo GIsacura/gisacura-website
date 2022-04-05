@@ -1,32 +1,87 @@
 header{
-  width: 70%;
+  width: auto;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 20px 5%;
+  background-color: transparent;
+}
+
+.show{
+  display: flex !important;
+}
+
+.logo-container{
+  display: flex;
+  align-items: center;
 }
 
 .logo-container img{
   width: 200px;
+  height: auto;
 }
 
 nav{
-  width: 50%;
-}
-
-nav ul{
-  display: flex;
-  justify-content: space-around;
   width: 100%;
 }
 
-nav ul li{
+nav .mobile{
+  display: none;
+  width: 100%;
+}
+
+nav .mobile .header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav .mobile .menu-icon{
+  font-size: 2.5rem;
+}
+
+nav .mobile ul{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 35px;
+}
+
+nav .mobile ul li{
+  background-color: rgb(83, 83, 83);
+  list-style: none;
+  padding: 0 10px;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+nav .mobile ul li:hover{
+  background-color: black;
+}
+
+nav .desktop__menu{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .desktop__menu ul{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+nav .desktop__menu ul li{
   position: relative;
   list-style: none;
   font-size: 2rem;
+  cursor: pointer;
 }
 
-nav ul li::before{
+nav .desktop__menu ul li::before{
   content:"";
   width:100%;
   position: absolute;
@@ -37,9 +92,32 @@ nav ul li::before{
   transform: scaleX(0);
   transition: transform 0.3s ease;
 
-  background-color: black;
+  background-color: white;
 }
 
-nav ul li:hover::before{
+nav .desktop__menu ul li:hover::before{
   transform: scaleX(1)
+}
+
+@media screen and (max-width: 607px){
+  header{
+    padding: 5px 5%;
+  }
+
+  .logo-container img{
+    width: 100px;
+  }
+
+  nav{
+    width: 100%;
+  }
+
+  nav .desktop__menu{
+    display: none;
+  }
+
+  nav .mobile{
+    display: block;
+  }
+
 }
