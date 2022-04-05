@@ -47,18 +47,28 @@ nav .mobile ul{
   width: 100%;
   left: 0;
   top: 35px;
+  z-index: 100;
 }
 
 nav .mobile ul li{
-  background-color: rgb(83, 83, 83);
+  background-color: white;
   list-style: none;
   padding: 0 10px;
   font-size: 1.6rem;
   line-height: 1.9rem;
 }
 
+nav .mobile ul li a{
+  text-decoration: none;
+  color: black;
+}
+
 nav .mobile ul li:hover{
   background-color: black;
+}
+
+nav .mobile ul li:hover a{
+  color: white;
 }
 
 nav .desktop__menu{
@@ -81,6 +91,11 @@ nav .desktop__menu ul li{
   cursor: pointer;
 }
 
+nav .desktop__menu ul li a{
+  text-decoration: none;
+  color: black;
+}
+
 nav .desktop__menu ul li::before{
   content:"";
   width:100%;
@@ -92,11 +107,25 @@ nav .desktop__menu ul li::before{
   transform: scaleX(0);
   transition: transform 0.3s ease;
 
-  background-color: white;
+  background-color: black;
 }
 
 nav .desktop__menu ul li:hover::before{
   transform: scaleX(1)
+}
+
+@media screen and (max-width:800px){
+  nav .desktop__menu .logo-container img{
+    width: 150px;
+  }
+
+  nav .desktop__menu ul{
+    width: 60%;
+  }
+
+  nav .desktop__menu ul li{
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 607px){

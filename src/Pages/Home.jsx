@@ -10,7 +10,7 @@ import '../styles/Home.css'
 const Home = () => {
   return (
     <div>
-      <section className='main'>
+      <section className='main' id='main'>
         <div className='main__photo'>
           <img src='../../assets/images/profile_photo.jpg' alt='profile-photo'/>
         </div>
@@ -36,6 +36,13 @@ const Home = () => {
             </a>
           </div>
         </section>
+      </section>
+
+      <section className='about-me' id='about-me'>
+        <h2>Hi!, i'm Gustavo. Nice to meet you.</h2>
+        <p>
+          I'm a Frontend developer, from the past year and a half i've been learning programing, mainly but not only web development, i'm always looking new things to learn and challenge myself every time. I worked with Html, Css and javascript (React mainly). Besides i have knowledge of Git, Tailwind, Node js, and Python. I'll be happy if we can work together!
+        </p>
       </section>
     </div>
   );
