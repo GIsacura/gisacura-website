@@ -46,7 +46,7 @@ const Home = () => {
       </section>
 
       <section className='projects' id='projects'>
-        <div>
+        <div className='projects__container'>
           <div className='projects__card'>
             <h3>Demo Halo Website</h3>
             <p>
@@ -73,6 +73,18 @@ const Home = () => {
               <a href="">Ver Demo</a>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className='contact'>
+        <div>
+          <h3>Email</h3>
+          <p>i.tavo1512@gmail.com</p>
+        </div>
+
+        <div>
+          <h3>Phone, WhatsApp and Telegram</h3>
+          <p>+584244209059</p>
         </div>
       </section>
     </div>

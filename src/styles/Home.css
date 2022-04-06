@@ -84,10 +84,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  min-height: 70vh;
   width: 100%;
   background-color: #006FFF;
-  color: white
+  color: white;
+  padding: 20px 0;
 }
 
 .about-me h2{
@@ -104,17 +105,82 @@
   height: auto;
 }
 
+/* Projects */
+.projects{
+  width: 100%;
+  margin: 50px 0;
+}
+
+.projects .projects__container{
+  width: 90%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.projects__card{
+  width: 1fr;
+  height: auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.1);
+  border-width: 1px;
+}
+
+.projects__card h3{
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.projects__card p{
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.projects__card--buttons{
+  display: flex;
+  justify-content: space-around;
+}
+
+.projects__card--buttons a{
+  width: 100px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: rgba(0, 44, 100);
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+.projects__card--buttons a:hover{
+  background-color: rgba(0, 44, 100, 0.8);
+}
+
 @media screen and (max-width: 1024px){
   .main__photo img{
     width: 250px;
     height: 300px;
   }
 
-  main__information h1{
+  .main__information h1{
     font-size: 4rem;
   }
   
   .main__information h3{
+    font-size: 2rem;
+  }
+
+  .about-me h2{
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .about-me p{
     font-size: 2rem;
   }
 }
@@ -164,5 +230,13 @@
   .main__information--social-media a .github-icon,
   .main__information--social-media a .twitter-icon {
     font-size: 4rem;
+  }
+
+  .about-me h2{
+    font-size: 2rem;
+  }
+
+  .about-me p{
+    font-size: 1.5rem;
   }
 }
