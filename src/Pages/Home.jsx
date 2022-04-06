@@ -44,6 +44,37 @@ const Home = () => {
           I'm a Frontend developer, from the past year and a half i've been learning programing, mainly but not only web development, i'm always looking new things to learn and challenge myself every time. I worked with Html, Css and javascript (React mainly). Besides i have knowledge of Git, Tailwind, Node js, and Python. I'll be happy if we can work together!
         </p>
       </section>
+
+      <section className='projects' id='projects'>
+        <div>
+          <div className='projects__card'>
+            <h3>Demo Halo Website</h3>
+            <p>
+              Landing Page based on the video game Halo
+            </p>
+            <div className='projects__card--buttons'>
+              <a href="https://github.com/GIsacura/react-demo-halo-website" target="_blank">Ver Codigo</a>
+              <a href="https://gisacura-react-demo-halo-website.vercel.app/" target="_blank">Ver Demo</a>
+            </div>
+          </div>
+          <div className='projects__card'>
+            <h3></h3>
+            <p></p>
+            <div className='projects__card--buttons'>
+              <a href="">Ver Codigo</a>
+              <a href="">Ver Demo</a>
+            </div>
+          </div>
+          <div className='projects__card'>
+            <h3></h3>
+            <p></p>
+            <div className='projects__card--buttons'>
+              <a href="">Ver Codigo</a>
+              <a href="">Ver Demo</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
