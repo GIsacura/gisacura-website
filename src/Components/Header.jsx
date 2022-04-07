@@ -20,7 +20,7 @@ const Header = () => {
       <nav>
         <div className='desktop__menu'>
           <div className='logo-container'>
-            <img src='../../assets/logo/logo_small1.png' alt='logo'/>
+            <img src='../../public/assets/logo/logo_small1.png' alt='logo'/>
           </div>
           <ul>
             <li><a href='#main'>Inicio</a></li>
@@ -33,7 +33,7 @@ const Header = () => {
         <div className='mobile'>
           <div className='header'>
             <div className='logo-container'>
-              <img src='../../assets/logo/logo_small1.png' alt='logo'/>
+              <img src='../../public/assets/logo/logo_small1.png' alt='logo'/>
             </div>
             <span onClick={toggleShowMenu}>
               <FontAwesomeIcon className='menu-icon' icon={faBars}/>
