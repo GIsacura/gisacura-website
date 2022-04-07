@@ -25,8 +25,8 @@ const Header = () => {
           <ul>
             <li><a href='#main'>Inicio</a></li>
             <li><a href='#about-me'>Sobre Mi</a></li>
-            <li><a href='#proyects'>Proyectos</a></li>
-            <li><a href='#contact-me'>Contacto</a></li>
+            <li><a href='#projects'>Proyectos</a></li>
+            <li><a href='#contact'>Contacto</a></li>
           </ul>
         </div>
 
@@ -42,8 +42,8 @@ const Header = () => {
             <ul ref={mobileMenu}>
               <li><a href='#main'>Inicio</a></li>
               <li><a href='#about-me'>Sobre Mi</a></li>
-              <li><a href='#proyects'>Proyectos</a></li>
-              <li><a href='#contact-me'>Contacto</a></li>
+              <li><a href='#projects'>Proyectos</a></li>
+              <li><a href='#contact'>Contacto</a></li>
             </ul>
         </div>
       </nav>

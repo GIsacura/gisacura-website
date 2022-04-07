@@ -113,15 +113,15 @@
 
 .projects .projects__container{
   width: 90%;
-  display: grid;
+  display: flex;
   margin: 0 auto;
-  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
   align-items: center;
   gap: 50px;
 }
 
 .projects__card{
-  width: 1fr;
+  max-width: 80%;
   height: auto;
   padding: 30px;
   border-radius: 10px;
@@ -161,6 +161,27 @@
   background-color: rgba(0, 44, 100, 0.8);
 }
 
+.contact{
+  height: 20vh;
+  background-color: #616161;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.contact h3{
+  font-size: 2rem;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.contact p{
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
 @media screen and (max-width: 1024px){
   .main__photo img{
     width: 250px;
@@ -170,7 +191,7 @@
   .main__information h1{
     font-size: 4rem;
   }
-  
+
   .main__information h3{
     font-size: 2rem;
   }
@@ -182,6 +203,12 @@
 
   .about-me p{
     font-size: 2rem;
+  }
+  
+  .projects__container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 
@@ -238,5 +265,18 @@
 
   .about-me p{
     font-size: 1.5rem;
+  }
+
+  .contact{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .contact h3{
+    font-size: 1.5rem;
+  }
+
+  .contact p{
+    font-size: 1rem;
   }
 }

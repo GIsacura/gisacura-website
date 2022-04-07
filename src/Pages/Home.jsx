@@ -57,33 +57,17 @@ const Home = () => {
               <a href="https://gisacura-react-demo-halo-website.vercel.app/" target="_blank">Ver Demo</a>
             </div>
           </div>
-          <div className='projects__card'>
-            <h3></h3>
-            <p></p>
-            <div className='projects__card--buttons'>
-              <a href="">Ver Codigo</a>
-              <a href="">Ver Demo</a>
-            </div>
-          </div>
-          <div className='projects__card'>
-            <h3></h3>
-            <p></p>
-            <div className='projects__card--buttons'>
-              <a href="">Ver Codigo</a>
-              <a href="">Ver Demo</a>
-            </div>
-          </div>
         </div>
       </section>
 
-      <section className='contact'>
+      <section className='contact' id='contact'>
         <div>
-          <h3>Email</h3>
+          <h3>Email: </h3>
           <p>i.tavo1512@gmail.com</p>
         </div>
 
         <div>
-          <h3>Phone, WhatsApp and Telegram</h3>
+          <h3>Phone, WhatsApp and Telegram: </h3>
           <p>+584244209059</p>
         </div>
       </section>
