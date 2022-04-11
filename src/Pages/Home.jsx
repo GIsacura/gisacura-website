@@ -3,7 +3,11 @@ import React from 'react';
 //Fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitterSquare, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-//Components
+//Assets
+import ProfilePhoto from '../../assets/images/profile_photo.jpg'
+import LinkedInLogo from '../../assets/logo/icons8-linkedin-48.png'
+import GitHubLogo from '../../assets/logo/icons8-github-48.png'
+import TwitterLogo from '../../assets/logo/icons8-twitter-cuadrado-48.png'
 //Styles
 import '../styles/Home.css'
 
@@ -12,22 +16,22 @@ const Home = () => {
     <div>
       <section className='main' id='main'>
         <div className='main__photo'>
-          <img src='../../public/assets/images/profile_photo.jpg' alt='profile-photo'/>
+          <img src={ProfilePhoto} alt='profile-photo'/>
         </div>
         <section className='main__information'>
           <h1>Gustavo Isacura</h1>
           <h3>Desarrolador Frontend</h3>
           <div className='main__information--social-media'>
             <a href='https://linkedin.com/in/gustavoisacura' target="_blank">
-              <img src='../../public/assets/logo/icons8-linkedin-48.png' alt='Linkedin'/>
+              <img src={LinkedInLogo} alt='Linkedin'/>
               <p>Linkedin</p>
             </a>
             <a href='https://github.com/GIsacura' target="_blank">
-              <img src='../../public/assets/logo/icons8-github-48.png' alt='Github'/>
+              <img src={GitHubLogo} alt='Github'/>
               <p>Github</p>
             </a>
             <a href='https://twitter.com/gisacura_' target="_blank">
-              <img src='../../public/assets/logo/icons8-twitter-cuadrado-48.png' alt='Twitter
+              <img src={TwitterLogo} alt='Twitter
               '/>
               <p>Twitter</p>
             </a>
