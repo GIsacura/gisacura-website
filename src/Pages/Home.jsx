@@ -20,7 +20,7 @@ const Home = () => {
         </div>
         <section className='main__information'>
           <h1>Gustavo Isacura</h1>
-          <h3>Desarrolador Frontend</h3>
+          <h3>Frontend Developer</h3>
           <div className='main__information--social-media'>
             <a href='https://linkedin.com/in/gustavoisacura' target="_blank">
               <img src={LinkedInLogo} alt='Linkedin'/>
@@ -54,8 +54,21 @@ const Home = () => {
               Landing Page based on the video game Halo
             </p>
             <div className='projects__card--buttons'>
-              <a href="https://github.com/GIsacura/react-demo-halo-website" target="_blank">Ver Codigo</a>
-              <a href="https://gisacura-react-demo-halo-website.vercel.app/" target="_blank">Ver Demo</a>
+              <a href="https://github.com/GIsacura/react-demo-halo-website" target="_blank">View Code</a>
+              <a href="https://gisacura-react-demo-halo-website.vercel.app/" target="_blank">View Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div className='projects__container'>
+          <div className='projects__card'>
+            <h3>Compound Interest Calculator</h3>
+            <p>
+
+            </p>
+            <div className='projects__card--buttons'>
+              <a href="https://github.com/GIsacura/compound-interest-calculator" target="_blank">View Code</a>
+              <a href="https://compound-interest-calculator-liart.vercel.app/" target="_blank">View Demo</a>
             </div>
           </div>
         </div>
