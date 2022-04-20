@@ -8,8 +8,13 @@ import ProfilePhoto from '../../assets/images/profile_photo.jpg'
 import LinkedInLogo from '../../assets/logo/icons8-linkedin-48.png'
 import GitHubLogo from '../../assets/logo/icons8-github-48.png'
 import TwitterLogo from '../../assets/logo/icons8-twitter-cuadrado-48.png'
+import WhatsappLogo from '../../assets/logo/icons8-whatsapp-48.png'
+import TelegramLogo from '../../assets/logo/icons8-aplicación-telegrama-48.png'
+import PhoneLogo from '../../assets/logo/icons8-phone-48.png'
+import MailLogo from '../../assets/logo/icons8-gmail-48.png'
 //Styles
 import '../styles/Home.css'
+import ProjectCard from '../Components/ProjectCard';
 
 const Home = () => {
   return (
@@ -47,41 +52,32 @@ const Home = () => {
       </section>
 
       <section className='projects' id='projects'>
-        <div className='projects__container'>
-          <div className='projects__card'>
-            <h3>Demo Halo Website</h3>
-            <p>
-              Landing Page based on the video game Halo
-            </p>
-            <div className='projects__card--buttons'>
-              <a href="https://github.com/GIsacura/react-demo-halo-website" target="_blank">View Code</a>
-              <a href="https://gisacura-react-demo-halo-website.vercel.app/" target="_blank">View Demo</a>
-            </div>
-          </div>
-        </div>
+        <ProjectCard
+          title='Demo Halo Website'
+          description='Landing Page based on the video game Halo'
+          codeUrl="https://github.com/GIsacura/react-demo-halo-website"
+          demoUrl="https://gisacura-react-demo-halo-website.vercel.app/"
+        />
 
-        <div className='projects__container'>
-          <div className='projects__card'>
-            <h3>Compound Interest Calculator</h3>
-            <p>
-
-            </p>
-            <div className='projects__card--buttons'>
-              <a href="https://github.com/GIsacura/compound-interest-calculator" target="_blank">View Code</a>
-              <a href="https://compound-interest-calculator-liart.vercel.app/" target="_blank">View Demo</a>
-            </div>
-          </div>
-        </div>
+        <ProjectCard
+          title='Compound Interest Calculator'
+          codeUrl="https://github.com/GIsacura/compound-interest-calculator" target="_blank"
+          demoUrl="https://compound-interest-calculator-liart.vercel.app/"
+        />
       </section>
 
       <section className='contact' id='contact'>
         <div>
-          <h3>Email: </h3>
+          <h3><img src={MailLogo} alt='mail'/>: </h3>
           <p>i.tavo1512@gmail.com</p>
         </div>
 
         <div>
-          <h3>Phone, WhatsApp and Telegram: </h3>
+          <div className='contact__logos'>
+            <span><img src={PhoneLogo} alt='phone'/></span>
+            <span><img src={WhatsappLogo} alt='whatsapp'/></span>
+            <span><img src={TelegramLogo} alt='telegram'/></span> :
+          </div>
           <p>+584244209059</p>
         </div>
       </section>

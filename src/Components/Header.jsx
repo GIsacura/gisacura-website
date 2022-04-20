@@ -23,10 +23,10 @@ const Header = () => {
             <img src={Logo} alt='logo'/>
           </div>
           <ul>
-            <li><a href='#main'>Inicio</a></li>
-            <li><a href='#about-me'>Sobre Mi</a></li>
-            <li><a href='#projects'>Proyectos</a></li>
-            <li><a href='#contact'>Contacto</a></li>
+            <li><a href='#main'>Main</a></li>
+            <li><a href='#about-me'>About Me</a></li>
+            <li><a href='#projects'>Projects</a></li>
+            <li><a href='#contact'>Contact Me</a></li>
           </ul>
         </div>
 
@@ -40,10 +40,10 @@ const Header = () => {
             </span>
           </div>
             <ul ref={mobileMenu}>
-              <li><a href='#main'>Inicio</a></li>
-              <li><a href='#about-me'>Sobre Mi</a></li>
-              <li><a href='#projects'>Proyectos</a></li>
-              <li><a href='#contact'>Contacto</a></li>
+              <li><a href='#main'>Main</a></li>
+              <li><a href='#about-me'>About Me</a></li>
+              <li><a href='#projects'>Projects</a></li>
+              <li><a href='#contact'>Contact Me</a></li>
             </ul>
         </div>
       </nav>
