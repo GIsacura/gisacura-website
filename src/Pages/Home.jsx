@@ -14,7 +14,10 @@ import PhoneLogo from '../../assets/logo/icons8-phone-48.png'
 import MailLogo from '../../assets/logo/icons8-gmail-48.png'
 //Styles
 import '../styles/Home.css'
+//Components
 import ProjectCard from '../Components/ProjectCard';
+//Utils
+import projects from '../utils/projectsData';
 
 const Home = () => {
   return (
@@ -47,23 +50,20 @@ const Home = () => {
       <section className='about-me' id='about-me'>
         <h2>Hi!, i'm Gustavo. Nice to meet you.</h2>
         <p>
-          I'm a Frontend developer, from the past year and a half i've been learning programing, mainly but not only web development, i'm always looking new things to learn and challenge myself every time. I worked with Html, Css and javascript (React mainly). Besides i have knowledge of Git, Tailwind, Node js, and Python. I'll be happy if we can work together!
+          I'm a Frontend developer, from the past year and a half i've been learning programing, mainly but not only web development, i'm always looking new things to learn and challenge myself every time. I worked with Html, Css and javascript (React mainly). Besides i have knowledge of Git, Tailwind, Node js, Redux, and Python. I'll be happy if we can work together!
         </p>
       </section>
 
       <section className='projects' id='projects'>
-        <ProjectCard
-          title='Demo Halo Website'
-          description='Landing Page based on the video game Halo'
-          codeUrl="https://github.com/GIsacura/react-demo-halo-website"
-          demoUrl="https://gisacura-react-demo-halo-website.vercel.app/"
-        />
-
-        <ProjectCard
-          title='Compound Interest Calculator'
-          codeUrl="https://github.com/GIsacura/compound-interest-calculator" target="_blank"
-          demoUrl="https://compound-interest-calculator-liart.vercel.app/"
-        />
+        {projects.map(project => (
+          <ProjectCard
+            title={project.title}
+            description={project.description}
+            codeUrl={project.codeUrl}
+            demoUrl={project.demoUrl}
+            technologies={project.technologies}
+          />
+        ))}
       </section>
 
       <section className='contact' id='contact'>
