@@ -18,6 +18,13 @@ const projects = [
     codeUrl: 'https://github.com/GIsacura/to-do-app-project',
     demoUrl: "https://todo-app-smoky-tau.vercel.app/",
     technologies: ["React", "Styled-components", "HTML", "Redux"]
+  },
+  {
+    title: "Waiting Line App",
+    description: "App that allow to arrange a number of clients in two lines (2 min and 3 min per client to attend). More info in README.md",
+    codeUrl: "https://github.com/GIsacura/waiting-line-app",
+    "demoUrl": "https://waiting-line-app.vercel.app/",
+    technologies: ["React", "Node", "Express", "HTML/CSS"]
   }
 ]
 
